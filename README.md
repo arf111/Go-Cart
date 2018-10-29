@@ -36,7 +36,7 @@ A PL-SQL Project based on super shop
 ### Fragmentation Schema
 1. Branch<sub>1</sub> = PJ<sub>branch_ID,Location,Phone</sub>SL<sub>Location=’Dhanmondi’</sub>Branch
 2. Branch<sub>2</sub> = PJ<sub>branch_ID,Location,Phone</sub>SL<sub>Location=’Mohammadpur’</sub>Branch
-3. Stores_in<sub>1</sub> = PJ<sub>P_sID, P_Quantity, Branch_ID</sub>SL<sub>Branch_ID = 1</sub> stores_in
+3. Stores_in<sub>1</sub> = PJ<sub>P_ID, P_Quantity, Branch_ID</sub>SL<sub>Branch_ID = 1</sub> stores_in
 4. Stores_in<sub>2</sub> = PJ<sub>P_ID, P_Quantity, Branch_ID</sub>SL<sub>Branch_ID = 2</sub> stores_in
 5. Transaction<sub>1</sub> = PJ<sub>T_ID,Cust_ID,Branch_ID,Total_Price,T_Date</sub>SL<sub>Branch_ID = 1</sub> Transaction
 6. Transaction<sub>2</sub> = PJ<sub>T_ID,Cust_ID,Branch_ID,Total_Price,T_Date</sub>SL<sub>Branch_ID = 2</sub> Transaction
