@@ -35,11 +35,11 @@ A PL-SQL Project based on super shop
 
 ### Fragmentation Schema
 1. Branch<sub>1</sub> = PJ<sub>branch_ID,Location,Phone</sub>SL<sub>Location=’Dhanmondi’</sub>Branch
-2. Branch<sub>2</sub> = PJbranch_ID,Location,PhoneSLLocation=’Mohammadpur’Branch
-3. Stores_in<sub>1</sub> = PJP_sID, P_Quantity, Branch_IDSLBranch_ID = 1 stores_in
-4. Stores_in<sub>2</sub> = PJP_ID, P_Quantity, Branch_IDSLBranch_ID = 2 stores_in
-5. Transaction<sub>1</sub> = PJT_ID,Cust_ID,Branch_ID,Total_Price,T_DateSLBranch_ID = 1 Transaction
-6. Transaction<sub>2</sub> = PJT_ID,Cust_ID,Branch_ID,Total_Price,T_DateSLBranch_ID = 2 Transaction
+2. Branch<sub>2</sub> = PJ<sub>branch_ID,Location,Phone</sub>SL<sub>Location=’Mohammadpur’</sub>Branch
+3. Stores_in<sub>1</sub> = PJ<sub>P_sID, P_Quantity, Branch_ID</sub>SL<sub>Branch_ID = 1</sub> stores_in
+4. Stores_in<sub>2</sub> = PJ<sub>P_ID, P_Quantity, Branch_ID</sub>SL<sub>Branch_ID = 2</sub> stores_in
+5. Transaction<sub>1</sub> = PJ<sub>T_ID,Cust_ID,Branch_ID,Total_Price,T_Date</sub>SL<sub>Branch_ID = 1</sub> Transaction
+6. Transaction<sub>2</sub> = PJ<sub>T_ID,Cust_ID,Branch_ID,Total_Price,T_Date</sub>SL<sub>Branch_ID = 2</sub> Transaction
 7. Branch<sub>1</sub> @ site<sub>1</sub>, Stores_in<sub>1</sub> @ site<sub>1</sub>, Transaction<sub>1</sub> @ site<sub>1</sub>
 8. Branch<sub>1</sub> @ site<sub>1</sub>, Stores_in<sub>1</sub> @ site<sub>1</sub>, Transaction<sub>1</sub> @ site<sub>1</sub>
 
