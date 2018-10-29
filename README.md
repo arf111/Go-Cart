@@ -32,3 +32,7 @@ score.
 
 Output of forecasted sale of month 1 = January
 
+## References
+1. Oracle Database 10g 
+2. Distributed Databases - Principles and Systems (Stefano Ceri)
+
