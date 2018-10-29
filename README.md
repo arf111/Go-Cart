@@ -41,7 +41,7 @@ A PL-SQL Project based on super shop
 5. Transaction<sub>1</sub> = PJ<sub>T_ID,Cust_ID,Branch_ID,Total_Price,T_Date</sub>SL<sub>Branch_ID = 1</sub> Transaction
 6. Transaction<sub>2</sub> = PJ<sub>T_ID,Cust_ID,Branch_ID,Total_Price,T_Date</sub>SL<sub>Branch_ID = 2</sub> Transaction
 7. Branch<sub>1</sub> @ site<sub>1</sub>, Stores_in<sub>1</sub> @ site<sub>1</sub>, Transaction<sub>1</sub> @ site<sub>1</sub>
-8. Branch<sub>1</sub> @ site<sub>1</sub>, Stores_in<sub>1</sub> @ site<sub>1</sub>, Transaction<sub>1</sub> @ site<sub>1</sub>
+8. Branch<sub>2</sub> @ site<sub>2</sub>, Stores_in<sub>2</sub> @ site<sub>2</sub>, Transaction<sub>2</sub> @ site<sub>2</sub>
 
 
 ## Machine Learning Technique
