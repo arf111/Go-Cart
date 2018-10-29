@@ -1,0 +1,9 @@
+1.	The “DB file”.sql contains all the tables of our project. 
+
+2.	 After running the “DB file”.sql , site1 and site2 folder contains all the necessary operations to do on each corresponding sites. No manual data insertion is needed.
+
+3.	The connection folder contains the necessary connecting sql files.
+
+4.	All the procedures and functions are implemented in package. Main.sql file runs all the packages.
+
+5. 	Triggers are in trigger folder.
