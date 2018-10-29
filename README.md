@@ -18,6 +18,32 @@ A PL-SQL Project based on super shop
 
 2.	Database:  Oracle SQL
 
+## Relational Model with Fragmentation Schema
+### Global Schema
+1. Branch(branch_ID, Location, Phone)
+2. Category(C_ID, C_Name)
+3. Membership(M_ID, P_Range_From, P_Range_To, Discount_Rate, Type)
+4. Product(P_ID, Selling_Price, P_Name, C_ID)
+5. Customer(C_ID, C_Name, Email, M_ID)
+6. Transaction(T_ID, Cust_ID, Branch_ID, Total_Price, T_Date)
+7. goes_in(P_ID, T_ID, Quantity)
+8. occurs_in(Branch_ID, T_ID)
+9. proceed(T_ID,C_ID)
+10. stores_in(P_ID, P_Quantity, Branch_ID)
+11. warehouse(S_ID, S_Date, P_ID, P_Quantity, Buying_Price)
+12. Sales(Serial_no, Month, Sales)
+
+### Fragmentation Schema
+1. Branch<sub>1</sub> = PJ<sub>branch_ID,Location,Phone</sub>SL<sub>Location=’Dhanmondi’</sub>Branch
+2. Branch<sub>2</sub> = PJbranch_ID,Location,PhoneSLLocation=’Mohammadpur’Branch
+3. Stores_in<sub>1</sub> = PJP_sID, P_Quantity, Branch_IDSLBranch_ID = 1 stores_in
+4. Stores_in<sub>2</sub> = PJP_ID, P_Quantity, Branch_IDSLBranch_ID = 2 stores_in
+5. Transaction<sub>1</sub> = PJT_ID,Cust_ID,Branch_ID,Total_Price,T_DateSLBranch_ID = 1 Transaction
+6. Transaction<sub>2</sub> = PJT_ID,Cust_ID,Branch_ID,Total_Price,T_DateSLBranch_ID = 2 Transaction
+7. Branch<sub>1</sub> @ site<sub>1</sub>, Stores_in<sub>1</sub> @ site<sub>1</sub>, Transaction<sub>1</sub> @ site<sub>1</sub>
+8. Branch<sub>1</sub> @ site<sub>1</sub>, Stores_in<sub>1</sub> @ site<sub>1</sub>, Transaction<sub>1</sub> @ site<sub>1</sub>
+
+
 ## Machine Learning Technique
 
 In procedure 6, we used a machine learning technique called linear regression to
